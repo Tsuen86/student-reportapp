@@ -3,7 +3,9 @@ from PIL import Image
 
 st.title('TAR Prep School Report')
 image = Image.open('download.png')
-st.image(image)
+if image.mode != 'RGB':
+    img = image.convert('RGB')
+st.image(img)
 
 st.sidebar.write("""
 This is a web app to check the outcome of your report card scores
