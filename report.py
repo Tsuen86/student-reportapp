@@ -36,12 +36,16 @@ try:
     if (val > 100 or val < 0):
         st.write("\nPlease enter a valid mark.\n")
                 
-    elif val >= y:
+    elif val = y:
+        st.write("\nYou've just made the passing grade.\n"
+                 "\nYou can do better next time!\n")
+        
+    elif val > y:
         st.write("\nYou passed your exam. Keep it up!\n")
        
     else:
         st.write("\nUnfortunately, you failed your exam.\n" 
-                 "\n Please work harder, you can make it!\n")
+                 "\nPlease work harder, you can make it!\n")
 
             
 except ValueError:
