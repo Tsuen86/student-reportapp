@@ -11,7 +11,8 @@ if readme:
 
     st.write("""
         **Critical information for this web app demo are shown below:**
-        \n * Author: [Lim Huei Tsuen]()
+        \n * Author: [Lim Huei Tsuen](https://www.linkedin.com/in/huei-tsuen-lim-89225536/)
+        \n * Co-author: [Dr. Yong Poh Yu](https://www.linkedin.com/in/yong-poh-yu/
         \n * Host & Libraries: [Streamlit](https://streamlit.io/)
         \n * Code Repository: [Github]()
         """)
@@ -20,27 +21,22 @@ st.sidebar.write("""
 This is a web app to check the outcome of your report card scores
 """)
 
-st.sidebar.write("Please enter the score you obtained")
+st.write("Please enter the score you obtained.To stop the algorithm, enter x .\n\n")
 
-y = 50 # minimum passing score
+mark = st.text_input('Enter the mark here', '50')
 
-while True:
-  
-  x = input("Please enter your mark. To stop the algorithm, enter x .\n\n")
-  
-  if x=="x":
-    print ("\nThank you for using our service.\n")
-    break
-  else:
-    try:
-      val = int(x)
-      if (val > 100 or val < 0):
-            print("\nPlease enter a valid mark.\n")
+try:
+    val = float(mark)
+            
+    if (val > 100 or val < 0):
+        st.write("\nPlease enter a valid mark.\n")
                 
-      elif val >= y:
-            print("\nYou passed your exam. Keep it up!\n")
-      else:
-            print("\nUnfortunately, you did not pass your exam. Work harder. You can make it.\n")
+    elif val >= y:
+        st.write("\nYou passed your exam. Keep it up!\n")
+       
+    else:
+        st.write("\nUnfortunately, you did not pass your exam. Work harder. You can make it.\n")
 
-    except ValueError:
-            print("\nPlease enter a number.\n")
+            
+except ValueError:
+    st.write("\nPlease enter a number.\n")
