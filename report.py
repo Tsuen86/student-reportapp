@@ -1,8 +1,5 @@
 import streamlit as st 
 from PIL import Image
-
-def header():
-     st.markdown(f'<p style="background-color:#0066cc;color:#33ff33;font-size:24px;border-radius:2%;">{url}</p>', unsafe_allow_html=True)
         
 st.header('BOOKWORM\'S PREP SCHOOL:')
 st.subheader('Report Check')
