@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 st.title('TAR Prep School Report')
-image = Image.open('reportcard.png')
+image = Image.open('report21.gif')
 st.image(image)
 
 st.sidebar.write("""
@@ -16,9 +16,9 @@ if readme:
     st.sidebar.write("""
         **Critical information for this web app demo are shown below:**
         \n * Author: [Lim Huei Tsuen](https://www.linkedin.com/in/huei-tsuen-lim-89225536/)
-        \n * Co-author: [Dr. Yong Poh Yu](https://www.linkedin.com/in/yong-poh-yu/
+        \n * Co-author: [Dr. Yong Poh Yu](https://www.linkedin.com/in/yong-poh-yu/)
         \n * Host & Libraries: [Streamlit](https://streamlit.io/)
-        \n * Code Repository: [Github]()
+        \n * Code Repository: [Github](https://github.com/Tsuen86/student-reportapp/)
         """)
 y = 50
 
