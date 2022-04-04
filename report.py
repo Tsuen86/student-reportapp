@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 
 st.title('TAR Prep School Report')
-image = Image.open('report21.gif')
+image = Image.open('report.png')
 st.image(image)
 
 st.sidebar.write("""
