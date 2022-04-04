@@ -5,6 +5,10 @@ st.title('TAR Prep School Report')
 # image = Image.open('reportcard.png')
 # st.image(image)
 
+st.sidebar.write("""
+This is a web app to check the outcome of your report card scores
+""")
+
 readme = st.sidebar.checkbox("README First")
 
 if readme:
@@ -17,10 +21,6 @@ if readme:
         \n * Code Repository: [Github]()
         """)
 y = 50
-
-st.sidebar.write("""
-This is a web app to check the outcome of your report card scores
-""")
 
 st.write("Please enter the score you obtained.To stop the algorithm, enter x .\n\n")
 
