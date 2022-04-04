@@ -4,7 +4,7 @@ from PIL import Image
 st.header('BOOKWORM\'S PREP SCHOOL:')
 st.subheader('Report Check')
 
-image = Image.open('report.png')
+image = Image.open('download.png')
 if image.mode != 'RGB':
     img = image.convert('RGB')
 st.image(img)
