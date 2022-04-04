@@ -2,8 +2,8 @@ import streamlit as st
 from PIL import Image
 
 st.title('TAR Prep School Report')
-# image = Image.open('reportcard.png')
-# st.image(image)
+image = Image.open('reportcard.png')
+st.image(image)
 
 st.sidebar.write("""
 This is a web app to check the outcome of your report card scores
