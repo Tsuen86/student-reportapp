@@ -22,7 +22,7 @@ if readme:
         """)
 y = 50
 
-st.header.write("Please enter the score you obtained.To stop the algorithm, enter x .\n\n")
+st.title("Please enter the score you obtained.To stop the algorithm, enter x .\n\n")
 
 mark = st.text_input('Enter the mark here', '50')
 
