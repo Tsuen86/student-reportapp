@@ -33,7 +33,7 @@ mark = st.text_input('Enter the mark here', '50')
 try:
     val = float(mark)
     
-    if mark=="x":
+    if val=="x":
         st.write ("\nThank you for using our service.\n")
             
     elif (val > 100 or val < 0):
