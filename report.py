@@ -13,7 +13,7 @@ readme = st.sidebar.checkbox("README First")
 
 if readme:
 
-    st.write("""
+    st.sidebar.write("""
         **Critical information for this web app demo are shown below:**
         \n * Author: [Lim Huei Tsuen](https://www.linkedin.com/in/huei-tsuen-lim-89225536/)
         \n * Co-author: [Dr. Yong Poh Yu](https://www.linkedin.com/in/yong-poh-yu/
@@ -22,7 +22,7 @@ if readme:
         """)
 y = 50
 
-st.write("Please enter the score you obtained.To stop the algorithm, enter x .\n\n")
+st.header.write("Please enter the score you obtained.To stop the algorithm, enter x .\n\n")
 
 mark = st.text_input('Enter the mark here', '50')
 
