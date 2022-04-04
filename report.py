@@ -2,8 +2,8 @@ import streamlit as st
 from PIL import Image
 
 st.title('TAR Prep School Report')
-image = Image.open('reportcard.png')
-st.image(image)
+# image = Image.open('reportcard.png')
+# st.image(image)
 
 readme = st.checkbox("README First")
 
