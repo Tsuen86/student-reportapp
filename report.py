@@ -33,9 +33,9 @@ mark = st.text_input('Enter the mark here', '50')
 try:
     val = float(mark)
     
-    if x=="x":
-    print ("\nThank you for using our service.\n")
-    break
+    if mark=="x":
+        print ("\nThank you for using our service.\n")
+        break
             
     elif (val > 100 or val < 0):
         st.write("\nPlease enter a valid mark.\n")
