@@ -24,20 +24,14 @@ if readme:
         """)
 y = 50
 
-st.header("Please enter the score you obtained.")
-
-st.subheader("To stop the algorithm, enter x .\n\n")
+st.subheader("Please enter the score you obtained.\n\n")
 
 mark = st.text_input('Enter the mark here', '50')
 
 try:
     val = float(mark)
-    
-    if val=="x":
-        st.write ("\nThank you for using our service.\n")
-    break
-            
-    elif (val > 100 or val < 0):
+         
+    if (val > 100 or val < 0):
         st.write("\nPlease enter a valid mark.\n")
                 
     elif val >= y:
