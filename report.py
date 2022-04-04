@@ -1,7 +1,9 @@
 import streamlit as st 
 from PIL import Image
 
-st.title('Bookworm\'s Prep School: Report Check')
+st.title('Bookworm\'s Prep School:')
+st.subtitle('Report Check')
+
 image = Image.open('download.png')
 if image.mode != 'RGB':
     img = image.convert('RGB')
@@ -24,7 +26,7 @@ if readme:
         """)
 y = 50 # minimum passing score
 
-st.subheader("Please submit your marks for pass/ fail check.\n\n")
+st.subheader("Please submit your marks for pass/ fail check:\n\n")
 
 mark = st.text_input('Enter the mark here', '50')
 
