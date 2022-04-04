@@ -1,8 +1,8 @@
 import streamlit as st 
 from PIL import Image
 
-st.title('Bookworm\'s Prep School:')
-st.subtitle('Report Check')
+st.header('Bookworm\'s Prep School:')
+st.subheader('Report Check')
 
 image = Image.open('download.png')
 if image.mode != 'RGB':
