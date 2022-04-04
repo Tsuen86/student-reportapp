@@ -40,7 +40,8 @@ try:
         st.write("\nYou passed your exam. Keep it up!\n")
        
     else:
-        st.write("\nUnfortunately, you failed your exam. \nPlease work harder, you can make it!")
+        st.write("\nUnfortunately, you failed your exam.\n" 
+                 "\n Please work harder, you can make it!\n")
 
             
 except ValueError:
