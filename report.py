@@ -16,6 +16,7 @@ if readme:
         \n * Host & Libraries: [Streamlit](https://streamlit.io/)
         \n * Code Repository: [Github]()
         """)
+y = 50
 
 st.sidebar.write("""
 This is a web app to check the outcome of your report card scores
