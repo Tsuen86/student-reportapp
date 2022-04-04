@@ -36,7 +36,7 @@ try:
     if (val > 100 or val < 0):
         st.write("\nPlease enter a valid mark.\n")
                 
-    elif val = y:
+    elif val == y:
         st.write("\nYou've just made the passing grade.\n"
                  "\nYou can do better next time!\n")
         
