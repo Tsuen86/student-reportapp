@@ -22,7 +22,7 @@ if readme:
         \n * Host & Libraries: [Streamlit](https://streamlit.io/)
         \n * Code Repository: [Github](https://github.com/Tsuen86/student-reportapp/)
         """)
-y = 50
+y = 50 # minimum passing score
 
 st.subheader("Please enter the score you obtained.\n\n")
 
