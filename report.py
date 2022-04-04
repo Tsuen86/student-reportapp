@@ -1,14 +1,14 @@
 import streamlit as st 
 from PIL import Image
 
-st.title('TAR Prep School Report')
+st.title('Bookworm\'s Prep School: Report Check')
 image = Image.open('download.png')
 if image.mode != 'RGB':
     img = image.convert('RGB')
 st.image(img)
 
 st.sidebar.write("""
-This is a web app to check the outcome of your report card scores
+This is a web app to check the pass/ fail outcome of your report card marks.
 """)
 
 readme = st.sidebar.checkbox("README First")
@@ -24,7 +24,7 @@ if readme:
         """)
 y = 50 # minimum passing score
 
-st.subheader("Please enter the score you obtained.\n\n")
+st.subheader("Please submit your marks for pass/ fail check.\n\n")
 
 mark = st.text_input('Enter the mark here', '50')
 
@@ -38,7 +38,7 @@ try:
         st.write("\nYou passed your exam. Keep it up!\n")
        
     else:
-        st.write("\nUnfortunately, you did not pass your exam. Work harder. You can make it.\n")
+        st.write("\nUnfortunately, you failed your exam. \nPlease work harder, you can make it!")
 
             
 except ValueError:
