@@ -5,7 +5,7 @@ st.title('TAR Prep School Report')
 # image = Image.open('reportcard.png')
 # st.image(image)
 
-readme = st.checkbox("README First")
+readme = st.sidebar.checkbox("README First")
 
 if readme:
 
