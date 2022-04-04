@@ -35,7 +35,7 @@ try:
     
     if val=="x":
         st.write ("\nThank you for using our service.\n")
-        break
+    break
             
     elif (val > 100 or val < 0):
         st.write("\nPlease enter a valid mark.\n")
