@@ -34,7 +34,7 @@ try:
     val = float(mark)
     
     if mark=="x":
-        print ("\nThank you for using our service.\n")
+        st.write ("\nThank you for using our service.\n")
         break
             
     elif (val > 100 or val < 0):
